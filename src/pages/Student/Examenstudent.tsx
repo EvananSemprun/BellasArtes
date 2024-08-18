@@ -54,7 +54,7 @@ function Examenstudent() {
                     </Card>
 
                     <Group mt={24.5} position="apart">
-                        <Title order={1}>Nota 17/20 pts</Title>
+                        <Title order={1}>Nota 16/20 pts</Title>
                         <Button size="md" color="indigo" radius="md">
                             Comentarios del profesor
                         </Button>
