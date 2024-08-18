@@ -1,35 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Login from './pages/Login';
+import HomeStudent from './pages/Student/HomeStudent';
+import Confistudent from "./pages/Student/Confistudent"
+import ThemeStudent from './pages/Student/ThemeStudent';
+import Examenstudent from "./pages/Student/Examenstudent"
+import MateriaStudent from './pages/Student/MateriaStudent';
+import Homeworkstudent from "./pages/Student/Homeworkstudent";
+import Materialnotestudent from "./pages/Student/Materialnotestudent"
+import Pendingactivitiesstudent from "./pages/Student/Pendingactivitiesstudent"
+import { useWindowSize } from '@uidotdev/usehooks';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      <BrowserRouter>
+        <Routes>
+          <Route path="/login" element={<Login/>} />
+          <Route path="/HomeStudent" element={<HomeStudent/>} />
+          <Route path="/MateriaStudent" element={<MateriaStudent/>} />
+          <Route path="/ThemeStudent" element={<ThemeStudent/>} />
+          <Route path="/Homeworkstudent" element={<Homeworkstudent/>} />
+          <Route path="/Examenstudent" element={<Examenstudent/>} />
+          <Route path="/Materialnotestudent" element={<Materialnotestudent/>} />
+          <Route path="/Pendingactivitiesstudent" element={<Pendingactivitiesstudent/>} />
+          <Route path="/Confistudent" element={<Confistudent/>} />
+          <Route path="/" element={<HomeStudent/>} />
+        </Routes>
+      </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
