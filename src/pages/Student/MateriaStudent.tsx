@@ -42,9 +42,9 @@ function MateriaStudent() {
         <Activitylist color="#FF6961" note="17/20 pts" state="Entragado" title="Examen" link="/Examenstudent" /> 
         <Activitylist color="#84B6F4" note="18/20 pts" state="Entragado" title="Tarea" link="/Homeworkstudent" /> 
         <Activitylist color="#A8CA7E"  note="15/20 pts" state="No revisado" title="Tema" link="/ThemeStudent" /> 
-      
+      cualqiuera cosa 
       </Card>
-
+pero que tu dice desgraciado
     </>
   );
 }
